@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    grid-template-rows: 0.1fr 3fr;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    height: 200px;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+
+.library{
+    height: 800px;
+    color: red;
+    grid-row: 2 / 3;
+    background-color: rgb(105, 28, 28);
+
+}
+
+.book{
+
+}
+
+div{
+    border: solid 0px red;
+}
