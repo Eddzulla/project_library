@@ -5,15 +5,24 @@
 
 .header{
     display: flex;
-    flex-direction: column;
     background-color: gray;
     color: white;
     height: 200px;
     grid-row: 1 / 2;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 40px;
-    
+    border-radius: 10px 10px 0 0 ;
+    margin-bottom: 1px;
+}
+
+.header button{
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bold;
+
 }
 
 .library{
@@ -27,16 +36,65 @@
 }
 
 .book{
-    display: flex;
-    height: 200px;
-    width: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 250px;
+    width: 300px;
     background-color: white;
     border-radius: 15px;
     margin: 10px;
-    padding: 5px;
-    justify-content: center;
+    padding: 10px;
+    height: relative;
+}
+.buttons-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
 
-div{
-    border: solid 0px red;
+.book_info_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book_info_div p,
+.book_info_div h1{
+    margin: 2px;
+    padding: 0;
+}
+.book_info_div p{
+    font-size: 20px;
+}
+.book_info_div h1{
+    font-size: 26px;
+}
+.book button{
+    width: 120px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+.book.read{
+    border: solid 10px rgb(10, 75, 10);
+    box-shadow: 3px 3px 3px rgb(28, 15, 15);
+}
+
+.book.unread{
+    border: solid 10px rgb(187, 0, 0);
+    box-shadow: 3px 3px 3px rgb(28, 15, 15);
+}
+
+#add_book{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox_div{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
 }

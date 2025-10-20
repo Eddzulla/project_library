@@ -8,9 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">Eddi's library
-            <button class="add_book">Add book</button>
+        <div class="header">
+            <h1>Eddi's library</h1>
+            <button class="show_dialog_button">Add book</button>
         </div>
+        <dialog id="add_book_dialog">
+            <form id="add_book">
+                <label for="book_name">Add a book name</label>
+                <input class = "val" type="text" id="book_name">
+                
+              
+                <label for="author_name">Add an author name</label>
+                <input class="val" type="text" id="author_name">
+                <label for="book_pages">Add amount of pages</label>
+                <input class="val" type="number" id="book_pages">
+                <div class="checkbox_div">
+                    <label for="read">Read?</label>
+                    <input class="val" type="checkbox" id="book_read">
+                </div>
+                <button type="submit" id="add_book_button">Add book</button>
+                
+            </form>
+        </dialog>
         <div class="library">
         </div>
     </div>
